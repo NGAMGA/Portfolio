@@ -14,9 +14,9 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Ashley</a>
+            <a class="navbar-brand fw-bold" href="#">Ashley</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,32 +34,30 @@
     </nav>
 
     <!-- ACCUEIL -->
-    <section id="accueil" class="vh-100 d-flex align-items-center bg-light">
+    <section id="accueil" class="vh-100 d-flex align-items-center bg-primary text-white">
         <div class="container text-center">
-            <h1 class="display-4">Je suis Ashley 👋</h1>
-            <p class="lead">
-                Je suis Ashley, étudiante en Bachelor 3 développement web full stack. 
-                J’aime participer à des sites et des applications qui sont à la fois fonctionnels et agréables à utiliser.
+            <h1 class="display-4 fw-bold">Je suis Ashley 👋</h1>
+            <p class="lead mb-4">
+                Je suis étudiante en Bachelor 3 développement web full stack.  
+                J’aime créer des sites et applications à la fois fonctionnels et agréables à utiliser.
             </p>
-            <a href="#projets" class="btn btn-primary btn-lg mt-3">Voir mes projets</a>
+            <a href="#projets" class="btn btn-outline-light btn-lg">Voir mes projets</a>
         </div>
     </section>
 
-    <!-- A PROPOS -->
+    <!-- À PROPOS -->
     <section id="apropos" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4">À propos de moi</h2>
-            <div class="row align-items-center">
-                <!-- Photo -->
-                <div class="col-md-4 text-center mb-4 mb-md-0">
-                    <img src="assets/images/profile.jpg" alt="Ashley" class="img-fluid rounded-circle profile-photo">
+            <h2 class="text-center mb-5 text-primary fw-bold">À propos de moi</h2>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center mb-4">
+                    <img src="assets/images/profile.jpg" alt="Ashley" class="img-fluid profile-photo-large shadow">
                 </div>
-                <!-- Texte -->
-                <div class="col-md-8">
-                    <p>
+                <div class="col-md-7">
+                    <p class="lead">
                         Je m’appelle Ashley et je suis passionnée par le développement web. J’adore apprendre de nouvelles technologies et trouver des solutions créatives pour rendre les sites et applications agréables à utiliser.
                         J’aime travailler en équipe et participer à des projets collaboratifs, car c’est l’occasion de partager des idées et d’apprendre des autres.  
-                        Je suis curieuse, motivée et toujours prête à relever de nouveaux défis pour améliorer mes compétences et créer des projets qui ont un réel impact.
+                        Je suis curieuse, motivée et toujours prête à relever de nouveaux défis pour créer des projets qui ont un réel impact.
                     </p>
                 </div>
             </div>
@@ -67,40 +65,40 @@
     </section>
 
     <!-- PROJETS -->
-    <section id="projets" class="py-5 bg-light">
+    <section id="projets" class="py-5 bg-white">
         <div class="container">
-            <h2 class="text-center mb-5">Mes projets</h2>
-            <div class="row">
+            <h2 class="text-center mb-5 text-primary fw-bold">Mes projets</h2>
+            <div class="row g-4">
 
                 <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="assets/images/projet1.jpg" class="card-img-top" alt="Projet 1">
+                    <div class="card shadow-sm h-100">
+                        <img src="assets/images/projet1.jpg" class="card-img-top" alt="API Poker">
                         <div class="card-body">
-                            <h5 class="card-title">API Poker</h5>
+                            <h5 class="card-title text-primary fw-bold">API Poker</h5>
                             <p class="card-text">Application utilisant une API pour gérer et jouer au poker en ligne.</p>
-                            <a href="#" class="btn btn-outline-primary">Voir plus</a>
+                            <a href="#" class="btn btn-primary btn-sm">Voir plus</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="assets/images/projet2.jpg" class="card-img-top" alt="Projet 2">
+                    <div class="card shadow-sm h-100">
+                        <img src="assets/images/projet2.jpg" class="card-img-top" alt="Site Admin Coaching">
                         <div class="card-body">
-                            <h5 class="card-title">Site Admin Coaching</h5>
+                            <h5 class="card-title text-primary fw-bold">Site Admin Coaching</h5>
                             <p class="card-text">Site web administrateur pour une application de coaching sportif.</p>
-                            <a href="#" class="btn btn-outline-primary">Voir plus</a>
+                            <a href="#" class="btn btn-primary btn-sm">Voir plus</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="assets/images/projet3.jpg" class="card-img-top" alt="Projet 3">
+                    <div class="card shadow-sm h-100">
+                        <img src="assets/images/projet3.jpg" class="card-img-top" alt="Portfolio Personnel">
                         <div class="card-body">
-                            <h5 class="card-title">Portfolio Personnel</h5>
+                            <h5 class="card-title text-primary fw-bold">Portfolio Personnel</h5>
                             <p class="card-text">Mon portfolio en ligne présentant mes projets et compétences.</p>
-                            <a href="#" class="btn btn-outline-primary">Voir plus</a>
+                            <a href="#" class="btn btn-primary btn-sm">Voir plus</a>
                         </div>
                     </div>
                 </div>
@@ -110,47 +108,48 @@
     </section>
 
     <!-- COMPETENCES -->
-    <section id="competences" class="py-5">
+    <section id="competences" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4">Compétences</h2>
-            <div class="row text-center">
-                <div class="col-md-6">
-                    <h5>Techniques</h5>
-                    <ul class="list-unstyled">
-                        <li><strong>Outils :</strong> Docker (Conteneurs), Postman (Test API)</li>
-                        <li><strong>Bases de données :</strong> MariaDB, MySQL, MongoDB</li>
-                        <li><strong>Gestion de projet :</strong> Git, Trello</li>
-                        <li><strong>Langages :</strong> ReactJs/NestJs, PHP (Laravel, Bootstrap, Tailwind), NodeJs</li>
-                    </ul>
+            <h2 class="text-center mb-4 text-primary fw-bold">Compétences</h2>
+            <div class="row justify-content-center g-3">
+
+                <div class="col-md-6 d-flex flex-wrap justify-content-center gap-2">
+                    <span class="badge bg-primary text-white px-3 py-2">Docker</span>
+                    <span class="badge bg-primary text-white px-3 py-2">Postman</span>
+                    <span class="badge bg-primary text-white px-3 py-2">MariaDB</span>
+                    <span class="badge bg-primary text-white px-3 py-2">MySQL</span>
+                    <span class="badge bg-primary text-white px-3 py-2">MongoDB</span>
+                    <span class="badge bg-primary text-white px-3 py-2">Git</span>
+                    <span class="badge bg-primary text-white px-3 py-2">Trello</span>
+                    <span class="badge bg-primary text-white px-3 py-2">ReactJs / NestJs</span>
+                    <span class="badge bg-primary text-white px-3 py-2">PHP (Laravel, Bootstrap, Tailwind)</span>
+                    <span class="badge bg-primary text-white px-3 py-2">NodeJs</span>
                 </div>
-                <div class="col-md-6">
-                    <h5>Comportementales</h5>
-                    <ul class="list-unstyled">
-                        <li>Communication</li>
-                        <li>Esprit d'équipe</li>
-                        <li>Autonomie</li>
-                        <li>Rigueur</li>
-                    </ul>
+
+                <div class="col-md-6 d-flex flex-wrap justify-content-center gap-2">
+                    <span class="badge bg-secondary text-white px-3 py-2">Communication</span>
+                    <span class="badge bg-secondary text-white px-3 py-2">Esprit d'équipe</span>
+                    <span class="badge bg-secondary text-white px-3 py-2">Autonomie</span>
+                    <span class="badge bg-secondary text-white px-3 py-2">Rigueur</span>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="py-5 bg-dark text-white">
+    <section id="contact" class="py-5 bg-primary text-white">
         <div class="container text-center">
             <h2>Contact</h2>
             <p>Email : ashley@email.com</p>
             <p>LinkedIn | GitHub</p>
-            <a href="assets/Ashley_NGAMGA_CV.pdf" target="_blank" class="btn btn-primary mt-3">Voir mon CV</a>
+            <a href="assets/Ashley_NGAMGA_CV.pdf" target="_blank" class="btn btn-outline-light mt-3">Voir mon CV</a>
         </div>
     </section>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- JS personnalisé -->
     <script src="js/script.js"></script>
-
 </body>
 </html>
