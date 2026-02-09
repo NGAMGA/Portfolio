@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Ashley</title>
 
-    <!-- Bootstrap CSS (CDN officiel) -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- CSS personnalisé -->
@@ -14,7 +14,7 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">Ashley</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -34,30 +34,30 @@
     </nav>
 
     <!-- ACCUEIL -->
-    <section id="accueil" class="vh-100 d-flex align-items-center bg-primary text-white">
+    <section id="accueil" class="vh-100 d-flex align-items-center bg-gradient text-white">
         <div class="container text-center">
             <h1 class="display-4 fw-bold">Je suis Ashley 👋</h1>
             <p class="lead mb-4">
-                Je suis étudiante en Bachelor 3 développement web full stack.  
-                J’aime créer des sites et applications à la fois fonctionnels et agréables à utiliser.
+                Étudiante en Bachelor 3 développement web full stack.  
+                J’aime créer des sites et applications fonctionnels et agréables.
             </p>
             <a href="#projets" class="btn btn-outline-light btn-lg">Voir mes projets</a>
         </div>
     </section>
 
     <!-- À PROPOS -->
-    <section id="apropos" class="py-5 bg-light">
+    <section id="apropos" class="py-5 bg-light shadow-sm">
         <div class="container">
-            <h2 class="text-center mb-5 text-primary fw-bold">À propos de moi</h2>
+            <h2 class="text-center mb-5 fw-bold text-dark">À propos de moi</h2>
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-5 text-center mb-4">
-                    <img src="assets/images/profile.jpg" alt="Ashley" class="img-fluid profile-photo-large shadow">
+                    <img src="assets/images/profile.jpg" alt="Ashley" class="img-fluid profile-photo shadow-lg">
                 </div>
                 <div class="col-md-7">
                     <p class="lead">
                         Je m’appelle Ashley et je suis passionnée par le développement web. J’adore apprendre de nouvelles technologies et trouver des solutions créatives pour rendre les sites et applications agréables à utiliser.
-                        J’aime travailler en équipe et participer à des projets collaboratifs, car c’est l’occasion de partager des idées et d’apprendre des autres.  
-                        Je suis curieuse, motivée et toujours prête à relever de nouveaux défis pour créer des projets qui ont un réel impact.
+                        J’aime travailler en équipe et participer à des projets collaboratifs.  
+                        Je suis curieuse, motivée et toujours prête à relever des défis pour créer des projets à fort impact.
                     </p>
                 </div>
             </div>
@@ -67,14 +67,14 @@
     <!-- PROJETS -->
     <section id="projets" class="py-5 bg-white">
         <div class="container">
-            <h2 class="text-center mb-5 text-primary fw-bold">Mes projets</h2>
+            <h2 class="text-center mb-5 fw-bold text-dark">Mes projets</h2>
             <div class="row g-4">
 
                 <div class="col-md-4">
-                    <div class="card shadow-sm h-100">
+                    <div class="card shadow-sm h-100 card-hover">
                         <img src="assets/images/projet1.jpg" class="card-img-top" alt="API Poker">
                         <div class="card-body">
-                            <h5 class="card-title text-primary fw-bold">API Poker</h5>
+                            <h5 class="card-title fw-bold text-primary">API Poker</h5>
                             <p class="card-text">Application utilisant une API pour gérer et jouer au poker en ligne.</p>
                             <a href="#" class="btn btn-primary btn-sm">Voir plus</a>
                         </div>
@@ -82,10 +82,10 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card shadow-sm h-100">
+                    <div class="card shadow-sm h-100 card-hover">
                         <img src="assets/images/projet2.jpg" class="card-img-top" alt="Site Admin Coaching">
                         <div class="card-body">
-                            <h5 class="card-title text-primary fw-bold">Site Admin Coaching</h5>
+                            <h5 class="card-title fw-bold text-primary">Site Admin Coaching</h5>
                             <p class="card-text">Site web administrateur pour une application de coaching sportif.</p>
                             <a href="#" class="btn btn-primary btn-sm">Voir plus</a>
                         </div>
@@ -93,10 +93,10 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card shadow-sm h-100">
+                    <div class="card shadow-sm h-100 card-hover">
                         <img src="assets/images/projet3.jpg" class="card-img-top" alt="Portfolio Personnel">
                         <div class="card-body">
-                            <h5 class="card-title text-primary fw-bold">Portfolio Personnel</h5>
+                            <h5 class="card-title fw-bold text-primary">Portfolio Personnel</h5>
                             <p class="card-text">Mon portfolio en ligne présentant mes projets et compétences.</p>
                             <a href="#" class="btn btn-primary btn-sm">Voir plus</a>
                         </div>
@@ -110,35 +110,50 @@
     <!-- COMPETENCES -->
     <section id="competences" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4 text-primary fw-bold">Compétences</h2>
-            <div class="row justify-content-center g-3">
+            <h2 class="text-center mb-5 fw-bold text-dark">Compétences</h2>
 
-                <div class="col-md-6 d-flex flex-wrap justify-content-center gap-2">
-                    <span class="badge bg-primary text-white px-3 py-2">Docker</span>
-                    <span class="badge bg-primary text-white px-3 py-2">Postman</span>
-                    <span class="badge bg-primary text-white px-3 py-2">MariaDB</span>
-                    <span class="badge bg-primary text-white px-3 py-2">MySQL</span>
-                    <span class="badge bg-primary text-white px-3 py-2">MongoDB</span>
-                    <span class="badge bg-primary text-white px-3 py-2">Git</span>
-                    <span class="badge bg-primary text-white px-3 py-2">Trello</span>
-                    <span class="badge bg-primary text-white px-3 py-2">ReactJs / NestJs</span>
-                    <span class="badge bg-primary text-white px-3 py-2">PHP (Laravel, Bootstrap, Tailwind)</span>
-                    <span class="badge bg-primary text-white px-3 py-2">NodeJs</span>
+            <!-- Compétences techniques -->
+            <h4 class="text-primary mb-4 text-center">Compétences techniques</h4>
+            <div class="row text-center mb-5">
+                <div class="col-md-4 mb-3">
+                    <h5>Outils</h5>
+                    <p>Docker</p>
+                    <p>Postman</p>
                 </div>
-
-                <div class="col-md-6 d-flex flex-wrap justify-content-center gap-2">
-                    <span class="badge bg-secondary text-white px-3 py-2">Communication</span>
-                    <span class="badge bg-secondary text-white px-3 py-2">Esprit d'équipe</span>
-                    <span class="badge bg-secondary text-white px-3 py-2">Autonomie</span>
-                    <span class="badge bg-secondary text-white px-3 py-2">Rigueur</span>
+                <div class="col-md-4 mb-3">
+                    <h5>Bases de données</h5>
+                    <p>MariaDB</p>
+                    <p>MySQL</p>
+                    <p>MongoDB</p>
                 </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Gestion de projet</h5>
+                    <p>Git</p>
+                    <p>Trello</p>
+                </div>
+            </div>
 
+            <!-- Compétences comportementales -->
+            <h4 class="text-primary mb-3 text-center">Compétences comportementales</h4>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-2 mb-2">
+                    <span class="badge bg-secondary p-2 w-100">Communication</span>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <span class="badge bg-secondary p-2 w-100">Esprit d'équipe</span>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <span class="badge bg-secondary p-2 w-100">Autonomie</span>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <span class="badge bg-secondary p-2 w-100">Rigueur</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="py-5 bg-primary text-white">
+    <section id="contact" class="py-5 bg-dark text-white">
         <div class="container text-center">
             <h2>Contact</h2>
             <p>Email : ashley@email.com</p>
@@ -149,7 +164,6 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="js/script.js"></script>
 </body>
 </html>
