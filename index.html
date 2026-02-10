@@ -70,17 +70,21 @@
             <h2 class="text-center mb-5 fw-bold text-main">Mes projets</h2>
             <div class="row g-4">
 
+                <!-- API Poker -->
                 <div class="col-md-4">
                     <div class="project-card card shadow-sm h-100 card-hover">
                         <img src="assets/images/projet1.jpg" class="card-img-top" alt="API Poker">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">API Poker</h5>
                             <p class="card-text">Application utilisant une API pour gérer et jouer au poker en ligne.</p>
-                            <a href="#" class="btn btn-outline-light btn-sm">Voir plus</a>
+                            <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#apiPokerModal">
+                                Voir plus
+                            </button>
                         </div>
                     </div>
                 </div>
 
+                <!-- Site Admin Coaching -->
                 <div class="col-md-4">
                     <div class="project-card card shadow-sm h-100 card-hover">
                         <img src="assets/images/projet2.jpg" class="card-img-top" alt="Site Admin Coaching">
@@ -92,6 +96,7 @@
                     </div>
                 </div>
 
+                <!-- Portfolio Personnel -->
                 <div class="col-md-4">
                     <div class="project-card card shadow-sm h-100 card-hover">
                         <img src="assets/images/projet3.jpg" class="card-img-top" alt="Portfolio Personnel">
@@ -106,6 +111,39 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal API Poker -->
+    <div class="modal fade" id="apiPokerModal" tabindex="-1" aria-labelledby="apiPokerLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold" id="apiPokerLabel">API Poker - Détails du projet</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Objectif :</h6>
+            <p>Développer une application web permettant de jouer au poker en ligne en utilisant une API pour gérer les parties, les cartes et les utilisateurs.</p>
+            
+            <h6>Fonctionnalités :</h6>
+            <ul>
+                <li>Création et gestion de parties de poker</li>
+                <li>Gestion des utilisateurs et scores</li>
+                <li>Interface interactive et responsive</li>
+                <li>Connexion à une API pour récupérer et mettre à jour les données</li>
+            </ul>
+
+            <h6>Technologies utilisées :</h6>
+            <p>Node.js, React.js, MongoDB, Express.js, Bootstrap, JavaScript</p>
+
+            <h6>Description :</h6>
+            <p>Le projet API Poker a été développé pour combiner la logique serveur avec une interface utilisateur interactive. Il montre ma capacité à travailler avec des API, gérer les bases de données, et créer une expérience utilisateur fluide. Le projet est également responsive et adapté aux écrans mobiles.</p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- COMPÉTENCES -->
     <section id="competences" class="py-5 section-dark animate">
