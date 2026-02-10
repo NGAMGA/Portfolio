@@ -1,9 +1,24 @@
+:root {
+    --bg-main: #0e0e11;
+    --bg-section: #16161d;
+    --text-main: #e6e6eb;
+    --text-muted: #b5b5c3;
+    --accent-green: #22c55e;
+    --accent-teal: #14b8a6;
+    --accent-violet: #8b5cf6;
+}
+
 /* GLOBAL */
 body {
     scroll-behavior: smooth;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0e0e11;
-    color: #e6e6eb;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+}
+
+section {
+    padding: 110px 0;
+    transition: all 0.5s ease-in-out;
 }
 
 /* NAVBAR */
@@ -12,15 +27,10 @@ body {
     backdrop-filter: blur(10px);
 }
 
-/* SECTIONS */
-section {
-    padding: 110px 0;
-}
-
-/* ACCUEIL — sombre premium */
+/* ACCUEIL */
 #accueil {
     min-height: 100vh;
-    background: radial-gradient(circle at top, #1b1b22, #0e0e11);
+    background: radial-gradient(circle at top, #1f2933, #0e0e11);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,15 +43,15 @@ section {
 }
 
 #accueil p {
-    max-width: 700px;
+    max-width: 720px;
     margin: auto;
-    opacity: 0.85;
+    color: var(--text-muted);
 }
 
-/* BOUTON */
+/* BOUTONS */
 .btn-gradient {
-    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
-    color: #fff;
+    background: linear-gradient(135deg, var(--accent-teal), var(--accent-green));
+    color: #0e0e11;
     padding: 14px 38px;
     border-radius: 30px;
     border: none;
@@ -50,17 +60,20 @@ section {
 
 .btn-gradient:hover {
     transform: translateY(-4px);
-    box-shadow: 0 15px 30px rgba(139, 92, 246, 0.4);
+    box-shadow: 0 15px 30px rgba(20, 184, 166, 0.4);
 }
 
-/* SECTIONS SOMBRES */
-.section-dark {
-    background-color: #14141a;
+.btn-outline-light {
+    border: 1px solid var(--accent-violet);
+    color: var(--accent-violet);
+    border-radius: 30px;
+    padding: 10px 28px;
+    transition: all 0.3s ease;
 }
 
-/* À PROPOS */
-#apropos {
-    background-color: #14141a;
+.btn-outline-light:hover {
+    background-color: var(--accent-violet);
+    color: #fff;
 }
 
 /* PHOTO */
@@ -77,22 +90,17 @@ section {
     transform: scale(1.05);
 }
 
-/* PROJETS */
-#projets {
-    background-color: #0e0e11;
-}
-
+/* CARTES PROJETS */
 .project-card {
-    background-color: #1a1a22;
-    border: 1px solid rgba(255,255,255,0.05);
+    background-color: #1c1c25;
     border-radius: 16px;
-    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.06);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 35px rgba(0,0,0,0.6);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 35px rgba(34, 197, 94, 0.25);
 }
 
 .card-img-top {
@@ -100,37 +108,24 @@ section {
     object-fit: cover;
 }
 
+/* TITRES PROJETS */
 .project-card h5 {
-    color: #f4f4f6;
+    color: var(--accent-teal);
 }
 
 /* COMPÉTENCES */
-#competences {
-    background-color: #14141a;
-}
-
-#competences h5 {
-    color: #c7bfff;
-}
-
-/* BADGES */
 .skill-badge {
-    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+    background: linear-gradient(135deg, var(--accent-violet), var(--accent-teal));
     color: white;
     padding: 12px;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 12px;
     transition: transform 0.3s ease;
 }
 
 .skill-badge:hover {
     transform: scale(1.08);
-}
-
-/* CONTACT */
-.contact-section {
-    background: radial-gradient(circle at bottom, #1b1b22, #0e0e11);
 }
 
 /* ANIMATIONS SCROLL */
