@@ -1,67 +1,146 @@
+/* GLOBAL */
 body {
     scroll-behavior: smooth;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f7f9fc;
+    background-color: #0e0e11;
+    color: #e6e6eb;
 }
 
+/* NAVBAR */
+.navbar-custom {
+    background: rgba(14, 14, 17, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* SECTIONS */
 section {
-    padding-top: 80px;
-    padding-bottom: 60px;
-    transition: all 0.5s ease-in-out;
+    padding: 110px 0;
 }
 
-/* ACCUEIL */
+/* ACCUEIL — sombre premium */
 #accueil {
-    background: linear-gradient(to right, #0d6efd, #6610f2);
     min-height: 100vh;
+    background: radial-gradient(circle at top, #1b1b22, #0e0e11);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-#accueil h1, #accueil p, #accueil a {
-    color: white !important;
+
+#accueil h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
 }
 
-/* Photo de profil */
-.profile-photo {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 20px;
-    border: 5px solid #ffffff;
-    transition: transform 0.3s;
+#accueil p {
+    max-width: 700px;
+    margin: auto;
+    opacity: 0.85;
 }
+
+/* BOUTON */
+.btn-gradient {
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+    color: #fff;
+    padding: 14px 38px;
+    border-radius: 30px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(139, 92, 246, 0.4);
+}
+
+/* SECTIONS SOMBRES */
+.section-dark {
+    background-color: #14141a;
+}
+
+/* À PROPOS */
+#apropos {
+    background-color: #14141a;
+}
+
+/* PHOTO */
+.profile-photo {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.4s ease;
+}
+
 .profile-photo:hover {
     transform: scale(1.05);
 }
 
-/* Cartes projets */
+/* PROJETS */
+#projets {
+    background-color: #0e0e11;
+}
+
+.project-card {
+    background-color: #1a1a22;
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.6);
+}
+
 .card-img-top {
-    height: 230px;
+    height: 220px;
     object-fit: cover;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.card-hover:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* Badges compétences */
-.badge {
-    font-size: 0.95rem;
-    transition: transform 0.3s, background 0.3s;
-}
-.badge:hover {
-    transform: scale(1.1);
-    background-color: #0d6efd;
+.project-card h5 {
+    color: #f4f4f6;
 }
 
-/* Titres sections */
-h2, h4, h5 {
-    transition: color 0.3s;
-}
-h2:hover, h4:hover, h5:hover {
-    color: #0d6efd;
+/* COMPÉTENCES */
+#competences {
+    background-color: #14141a;
 }
 
+#competences h5 {
+    color: #c7bfff;
+}
+
+/* BADGES */
+.skill-badge {
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: transform 0.3s ease;
+}
+
+.skill-badge:hover {
+    transform: scale(1.08);
+}
+
+/* CONTACT */
+.contact-section {
+    background: radial-gradient(circle at bottom, #1b1b22, #0e0e11);
+}
+
+/* ANIMATIONS SCROLL */
+.animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
