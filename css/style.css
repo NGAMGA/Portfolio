@@ -140,3 +140,28 @@ section {
     transform: translateY(0);
 }
 
+
+/* MODALE SOMBRE */
+.modal-dark {
+    background-color: var(--bg-section);
+    color: var(--text-main);
+    border-radius: 16px;
+}
+
+.modal-dark .modal-header {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.modal-dark .modal-footer {
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.modal-dark p,
+.modal-dark li {
+    color: var(--text-muted);
+}
+
+.modal-dark strong {
+    color: var(--text-main);
+}
+
