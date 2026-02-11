@@ -13,233 +13,178 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top shadow">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Ashley</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
-                <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Ashley</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<!-- ACCUEIL -->
-<section id="accueil" class="hero">
-   <div class="hero-oval">
-
-    <h1>Ashley Tania NGAMGA</h1>
-    <h2>Développeur Web Full Stack<br>React.js / NestJS</h2>
-
-    <a href="#projects" class="hero-btn">
-      Voir mes projets
-    </a>
-
-  </div>
-
-  <p class="hero-description">
-    Je suis Ashley, étudiante en Bachelor 3 développement web.
-    J’aime concevoir des sites et des applications à la fois
-    fonctionnels, modernes et agréables à utiliser.
-    Ce portfolio présente mes projets et réalisations.
-  </p>
-</section>
-
-
-<!-- À PROPOS -->
-<section id="apropos" class="bg-section shadow-sm">
-    <div class="container animate">
-        <h2 class="text-center mb-5 fw-bold">À propos de moi</h2>
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-5 text-center mb-4">
-                <img src="assets/images/profile.jpg" alt="Ashley" class="profile-photo shadow-lg">
-            </div>
-            <div class="col-md-7">
-                <p class="lead">
-                    Je m’appelle Ashley et je suis passionnée par le développement web. J’adore apprendre de nouvelles technologies et trouver des solutions créatives pour rendre les sites et applications agréables à utiliser.
-                    J’aime travailler en équipe et participer à des projets collaboratifs.  
-                    Je suis curieuse, motivée et toujours prête à relever des défis pour créer des projets à fort impact.
-                </p>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-</section>
+    </nav>
 
-<!-- PROJETS -->
-<section id="projets">
-    <div class="container animate">
-        <h2 class="text-center mb-5 fw-bold">Mes projets</h2>
-        <div class="row g-4">
-
-            <!-- API Poker -->
-            <div class="col-md-4">
-                <div class="project-card shadow-sm h-100">
-                    <img src="assets/images/api_poker.jpg" class="card-img-top" alt="API Poker">
-                    <div class="card-body">
-                        <h5 class="fw-bold text-teal">API Poker</h5>
-                        <p class="card-text">Application API pour gérer et jouer au poker en ligne via Postman et terminal.</p>
-                        <button class="btn btn-gradient btn-sm" data-bs-toggle="modal" data-bs-target="#modalApiPoker">Voir plus</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Site Admin Coaching -->
-            <div class="col-md-4">
-                <div class="project-card shadow-sm h-100">
-                    <img src="assets/images/projet2.jpg" class="card-img-top" alt="Site Admin Coaching">
-                    <div class="card-body">
-                        <h5 class="fw-bold text-teal">Site Admin Coaching</h5>
-                        <p class="card-text">Site web administrateur pour une application de coaching sportif.</p>
-                        <button class="btn btn-gradient btn-sm">Voir plus</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Portfolio Personnel -->
-            <div class="col-md-4">
-                <div class="project-card shadow-sm h-100">
-                    <img src="assets/images/projet3.jpg" class="card-img-top" alt="Portfolio Personnel">
-                    <div class="card-body">
-                        <h5 class="fw-bold text-teal">Portfolio Personnel</h5>
-                        <p class="card-text">Mon portfolio en ligne présentant mes projets et compétences.</p>
-                        <button class="btn btn-gradient btn-sm">Voir plus</button>
-                    </div>
-                </div>
-            </div>
-
+    <!-- ACCUEIL -->
+    <section id="accueil" class="d-flex align-items-center flex-column">
+        <div class="home-oval animate">
+            <h1>Ashley Tania NGAMGA</h1>
+            <h2>Développeur Web Full Stack<br>React.js / NestJS</h2>
+            <a href="#projets" class="home-btn">Voir mes projets</a>
         </div>
-    </div>
-</section>
-
-<!-- MODALE API POKER -->
-<!-- MODALE API POKER -->
-<div class="modal fade" id="modalApiPoker" tabindex="-1">
-  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h5 class="modal-title fw-bold">API Poker — Détails du projet</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <div class="modal-body">
-
-        <p><strong> Objectif</strong></p>
-        <p>
-          Concevoir une API REST permettant de gérer des parties de poker :
-          création de joueurs, distribution des cartes et simulation des tours de jeu
-          via le terminal et Postman.
+        <p class="home-text animate mt-4">
+            Je suis Ashley, étudiante en Bachelor 3 développement web.
+            J’aime concevoir des sites et des applications à la fois
+            fonctionnels, modernes et agréables à utiliser.
+            Ce portfolio présente mes projets et réalisations.
         </p>
+    </section>
 
-        <p><strong> Technologies utilisées</strong></p>
-        <ul>
-          <li>Node.js</li>
-          <li>Express.js</li>
-          <li>MongoDB</li>
-          <li>Postman</li>
-          <li>Git</li>
-        </ul>
-
-        <p><strong> Fonctionnement</strong></p>
-        <ul>
-          <li>Lancement du serveur via le terminal</li>
-          <li>Tests des routes API avec Postman</li>
-          <li>Gestion des joueurs et des cartes côté backend</li>
-        </ul>
-
-        <p><strong> Défis rencontrés</strong></p>
-        <ul>
-          <li>Implémentation des règles du poker</li>
-          <li>Gestion des combinaisons de cartes</li>
-          <li>Structuration d’une API REST propre</li>
-        </ul>
-
-        <p><strong> Résultat</strong></p>
-        <p>
-          API backend fonctionnelle, testable entièrement via Postman,
-          démontrant la maîtrise du développement backend.
-        </p>
-
-      </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">
-          Fermer
-        </button>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-
-<!-- COMPETENCES -->
-<section id="competences" class="bg-section">
-    <div class="container animate">
-        <h2 class="text-center mb-5 fw-bold">Compétences</h2>
-
-        <!-- Techniques -->
-        <h4 class="text-teal mb-4 text-center">Compétences techniques</h4>
-        <div class="row text-center mb-5">
-            <div class="col-md-4 mb-3">
-                <h5>Outils</h5>
-                <p>Docker</p>
-                <p>Postman</p>
-            </div>
-            <div class="col-md-4 mb-3">
-                <h5>Bases de données</h5>
-                <p>MariaDB</p>
-                <p>MySQL</p>
-                <p>MongoDB</p>
-            </div>
-            <div class="col-md-4 mb-3">
-                <h5>Gestion de projet</h5>
-                <p>Git</p>
-                <p>Trello</p>
+    <!-- À PROPOS -->
+    <section id="apropos" class="py-5 bg-section animate">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold text-main">À propos de moi</h2>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center mb-4">
+                    <img src="assets/images/profile.jpg" alt="Ashley" class="img-fluid profile-photo">
+                </div>
+                <div class="col-md-7">
+                    <p class="lead">
+                        Je m’appelle Ashley et je suis passionnée par le développement web. 
+                        J’adore apprendre de nouvelles technologies et trouver des solutions créatives pour rendre les sites et applications agréables à utiliser.
+                        J’aime travailler en équipe et participer à des projets collaboratifs.  
+                        Je suis curieuse, motivée et toujours prête à relever des défis pour créer des projets à fort impact.
+                    </p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- Comportementales -->
-        <h4 class="text-teal mb-3 text-center">Compétences comportementales</h4>
-        <div class="row justify-content-center text-center">
-            <div class="col-md-2 mb-2">
-                <span class="skill-badge">Communication</span>
-            </div>
-            <div class="col-md-2 mb-2">
-                <span class="skill-badge">Esprit d'équipe</span>
-            </div>
-            <div class="col-md-2 mb-2">
-                <span class="skill-badge">Autonomie</span>
-            </div>
-            <div class="col-md-2 mb-2">
-                <span class="skill-badge">Rigueur</span>
+    <!-- PROJETS -->
+    <section id="projets" class="py-5 animate">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold text-main">Mes projets</h2>
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="project-card shadow-sm h-100 animate">
+                        <img src="assets/images/projet1.jpg" class="card-img-top" alt="API Poker">
+                        <div class="card-body">
+                            <h5 class="fw-bold">API Poker</h5>
+                            <p>Application que l’on lance via Postman et terminal pour simuler un jeu de poker.</p>
+                            <button class="btn btn-gradient" data-bs-toggle="modal" data-bs-target="#apiPokerModal">
+                                Voir plus
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="project-card shadow-sm h-100 animate">
+                        <img src="assets/images/projet2.jpg" class="card-img-top" alt="Site Admin Coaching">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Site Admin Coaching</h5>
+                            <p>Site web administrateur pour une application de coaching sportif.</p>
+                            <a href="#" class="btn btn-gradient">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="project-card shadow-sm h-100 animate">
+                        <img src="assets/images/projet3.jpg" class="card-img-top" alt="Portfolio Personnel">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Portfolio Personnel</h5>
+                            <p>Mon portfolio en ligne présentant mes projets et compétences.</p>
+                            <a href="#" class="btn btn-gradient">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- CONTACT -->
-<section id="contact" class="bg-section">
-    <div class="container text-center animate">
-        <h2 class="mb-4 fw-bold">Contact</h2>
-        <p>Email : ashleyngamga@gmail.com</p>
-        <p>LinkedIn | GitHub</p>
-        <a href="assets/Ashley_NGAMGA_CV.pdf" target="_blank" class="btn btn-outline-light mt-3">Voir mon CV</a>
+    <!-- MODAL API POKER -->
+    <div class="modal fade" id="apiPokerModal" tabindex="-1" aria-labelledby="apiPokerModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="apiPokerModalLabel">API Poker - Détails du projet</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Objectif :</strong> Simuler un jeu de poker à l’aide d’une API et tester les endpoints avec Postman.</p>
+            <p><strong>Technologies utilisées :</strong> Node.js, Express.js, MongoDB, Postman</p>
+            <p><strong>Description :</strong> Le projet permet de créer des parties de poker, gérer les joueurs, les mises et déterminer le gagnant. Tout est testé via terminal et Postman. Ce projet met en avant la compréhension des API REST, des requêtes HTTP et de la logique de jeu.</p>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<!-- JS personnalisé -->
-<script src="js/script.js"></script>
+    <!-- COMPÉTENCES -->
+    <section id="competences" class="py-5 animate">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold text-main">Compétences</h2>
+
+            <h4 class="text-teal mb-4 text-center">Compétences techniques</h4>
+            <div class="row text-center mb-5">
+                <div class="col-md-4 mb-3">
+                    <h5>Outils</h5>
+                    <p>Docker</p>
+                    <p>Postman</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Bases de données</h5>
+                    <p>MariaDB</p>
+                    <p>MySQL</p>
+                    <p>MongoDB</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Gestion de projet</h5>
+                    <p>Git</p>
+                    <p>Trello</p>
+                </div>
+            </div>
+
+            <h4 class="text-teal mb-3 text-center">Compétences comportementales</h4>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-2 mb-2">
+                    <span class="skill-badge">Communication</span>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <span class="skill-badge">Esprit d'équipe</span>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <span class="skill-badge">Autonomie</span>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <span class="skill-badge">Rigueur</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-5 bg-section animate">
+        <div class="container text-center">
+            <h2>Contact</h2>
+            <p>Email : ashleyngamga@gmail.com</p>
+            <p>LinkedIn | GitHub</p>
+            <a href="assets/Ashley_NGAMGA_CV.pdf" target="_blank" class="btn btn-outline-light mt-3">Voir mon CV</a>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
