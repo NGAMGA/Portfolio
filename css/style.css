@@ -8,7 +8,7 @@
     --accent-violet: #8b5cf6;
 }
 
-/* GLOBAL */
+/* ================= GLOBAL ================= */
 body {
     scroll-behavior: smooth;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,13 +21,13 @@ section {
     transition: all 0.5s ease-in-out;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 .navbar-custom {
     background: rgba(14, 14, 17, 0.95);
     backdrop-filter: blur(10px);
 }
 
-/* ACCUEIL */
+/* ================= ACCUEIL ================= */
 #accueil {
     min-height: 100vh;
     background: radial-gradient(circle at top, #1f2933, #0e0e11);
@@ -48,7 +48,7 @@ section {
     color: var(--text-muted);
 }
 
-/* BOUTONS */
+/* ================= BOUTONS ================= */
 .btn-gradient {
     background: linear-gradient(135deg, var(--accent-teal), var(--accent-green));
     color: #0e0e11;
@@ -76,7 +76,7 @@ section {
     color: #fff;
 }
 
-/* PHOTO */
+/* ================= PHOTO ================= */
 .profile-photo {
     width: 340px;
     height: 340px;
@@ -90,7 +90,7 @@ section {
     transform: scale(1.05);
 }
 
-/* CARTES PROJETS */
+/* ================= CARTES PROJETS ================= */
 .project-card {
     background-color: #1c1c25;
     border-radius: 16px;
@@ -108,12 +108,12 @@ section {
     object-fit: cover;
 }
 
-/* TITRES PROJETS */
+/* ================= TITRES PROJETS ================= */
 .project-card h5 {
     color: var(--accent-teal);
 }
 
-/* COMPÉTENCES */
+/* ================= COMPÉTENCES ================= */
 .skill-badge {
     background: linear-gradient(135deg, var(--accent-violet), var(--accent-teal));
     color: white;
@@ -128,7 +128,7 @@ section {
     transform: scale(1.08);
 }
 
-/* ANIMATIONS SCROLL */
+/* ================= ANIMATIONS SCROLL ================= */
 .animate {
     opacity: 0;
     transform: translateY(50px);
@@ -140,28 +140,41 @@ section {
     transform: translateY(0);
 }
 
+/* ===================================================== */
+/* ===== CORRECTION DÉFINITIVE DES MODALES BOOTSTRAP ==== */
+/* ===================================================== */
 
-/* MODALE SOMBRE */
-.modal-dark {
-    background-color: var(--bg-section);
-    color: var(--text-main);
-    border-radius: 16px;
+.modal-content {
+    background-color: var(--bg-section) !important;
+    color: var(--text-main) !important;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.08);
 }
 
-.modal-dark .modal-header {
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+.modal-header,
+.modal-footer {
+    border-color: rgba(255,255,255,0.1);
 }
 
-.modal-dark .modal-footer {
-    border-top: 1px solid rgba(255,255,255,0.1);
+.modal-title {
+    color: var(--text-main) !important;
+    font-weight: 600;
 }
 
-.modal-dark p,
-.modal-dark li {
-    color: var(--text-muted);
+.modal-body {
+    color: var(--text-muted) !important;
 }
 
-.modal-dark strong {
-    color: var(--text-main);
+.modal-body p,
+.modal-body li {
+    color: var(--text-muted) !important;
 }
 
+.modal-body strong {
+    color: var(--text-main) !important;
+}
+
+/* Bouton fermer visible en dark mode */
+.btn-close {
+    filter: invert(1);
+}
