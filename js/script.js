@@ -11,3 +11,8 @@ window.addEventListener('scroll', () => {
     });
 });
 
+window.addEventListener('load', () => {
+    document.querySelectorAll('.animate').forEach(el => {
+        el.classList.add('show');
+    });
+});
