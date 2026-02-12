@@ -27,44 +27,70 @@ section {
 }
 
 /* ================= ACCUEIL ================= */
+/* ================= ACCUEIL ================= */
 #accueil {
-    min-height: calc(100vh - 80px);
-    background: radial-gradient(circle at top, #1f2933, #0e0e11);
+    min-height: 100vh;
+    background: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 120px 20px 60px;
+    padding: 140px 20px 80px;
 }
 
-
-.home-oval {
-    background: linear-gradient(135deg, #1f2933, #111827);
-    padding: 60px 70px;
-    border-radius: 40%;
-    box-shadow: 0 25px 60px rgba(20, 184, 166, 0.25);
-    max-width: 700px;
+/* Ovale central */
+.hero-oval {
+    background: linear-gradient(
+        135deg,
+        var(--accent-violet),
+        var(--accent-teal)
+    );
+    color: #ffffff;
+    padding: 70px 90px;
+    border-radius: 50%;
+    max-width: 900px;
+    margin-bottom: 50px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.25);
 }
 
-.home-oval h1 {
+.hero-oval h1 {
     font-size: 2.6rem;
     font-weight: 700;
-    color: var(--text-main);
 }
 
-.home-oval h2 {
-    font-size: 1.2rem;
-    color: var(--text-muted);
-    margin-bottom: 25px;
+.hero-oval h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 10px;
 }
 
+/* Bouton accueil */
+.hero-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 40px;
+    border-radius: 30px;
+    background: #0e0e11;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: #1f2933;
+    transform: translateY(-3px);
+}
+
+/* Texte sous l’ovale */
 .hero-description {
     max-width: 720px;
-    margin-top: 40px;
-    color: var(--text-muted);
+    color: #444;
     font-size: 1rem;
+    line-height: 1.6;
 }
+
 
 /* ================= BOUTONS ================= */
 .btn-gradient {

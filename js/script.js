@@ -12,7 +12,7 @@ window.addEventListener('scroll', () => {
 });
 
 window.addEventListener('load', () => {
-    document.querySelectorAll('.animate').forEach(el => {
-        el.classList.add('show');
+    document.querySelectorAll('section').forEach(section => {
+        section.style.display = 'block';
     });
 });
