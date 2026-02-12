@@ -178,3 +178,19 @@ section {
 .btn-close {
     filter: invert(1);
 }
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .home-oval {
+        padding: 40px 30px;
+        border-radius: 35%;
+    }
+
+    .home-oval h1 {
+        font-size: 1.6rem;
+    }
+
+    .home-oval h2 {
+        font-size: 1rem;
+    }
+}
