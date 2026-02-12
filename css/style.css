@@ -18,7 +18,6 @@ body {
 
 section {
     padding: 110px 0;
-    transition: all 0.5s ease-in-out;
 }
 
 /* ================= NAVBAR ================= */
@@ -32,20 +31,38 @@ section {
     min-height: 100vh;
     background: radial-gradient(circle at top, #1f2933, #0e0e11);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 160px 20px 100px;
 }
 
-#accueil h1 {
-    font-size: 3rem;
-    letter-spacing: 1px;
+.home-oval {
+    background: linear-gradient(135deg, #1f2933, #111827);
+    padding: 60px 70px;
+    border-radius: 40%;
+    box-shadow: 0 25px 60px rgba(20, 184, 166, 0.25);
+    max-width: 700px;
 }
 
-#accueil p {
-    max-width: 720px;
-    margin: auto;
+.home-oval h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.home-oval h2 {
+    font-size: 1.2rem;
     color: var(--text-muted);
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    max-width: 720px;
+    margin-top: 40px;
+    color: var(--text-muted);
+    font-size: 1rem;
 }
 
 /* ================= BOUTONS ================= */
@@ -63,19 +80,6 @@ section {
     box-shadow: 0 15px 30px rgba(20, 184, 166, 0.4);
 }
 
-.btn-outline-light {
-    border: 1px solid var(--accent-violet);
-    color: var(--accent-violet);
-    border-radius: 30px;
-    padding: 10px 28px;
-    transition: all 0.3s ease;
-}
-
-.btn-outline-light:hover {
-    background-color: var(--accent-violet);
-    color: #fff;
-}
-
 /* ================= PHOTO ================= */
 .profile-photo {
     width: 340px;
@@ -83,19 +87,14 @@ section {
     object-fit: cover;
     border-radius: 18px;
     border: 1px solid rgba(255,255,255,0.1);
-    transition: transform 0.4s ease;
 }
 
-.profile-photo:hover {
-    transform: scale(1.05);
-}
-
-/* ================= CARTES PROJETS ================= */
+/* ================= PROJETS ================= */
 .project-card {
     background-color: #1c1c25;
     border-radius: 16px;
     border: 1px solid rgba(255,255,255,0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .project-card:hover {
@@ -108,31 +107,11 @@ section {
     object-fit: cover;
 }
 
-/* ================= TITRES PROJETS ================= */
-.project-card h5 {
-    color: var(--accent-teal);
-}
-
-/* ================= COMPÉTENCES ================= */
-.skill-badge {
-    background: linear-gradient(135deg, var(--accent-violet), var(--accent-teal));
-    color: white;
-    padding: 12px;
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 12px;
-    transition: transform 0.3s ease;
-}
-
-.skill-badge:hover {
-    transform: scale(1.08);
-}
-
-/* ================= ANIMATIONS SCROLL ================= */
+/* ================= ANIMATIONS ================= */
 .animate {
     opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.9s ease, transform 0.9s ease;
+    transform: translateY(40px);
+    transition: 0.9s ease;
 }
 
 .animate.show {
@@ -140,56 +119,28 @@ section {
     transform: translateY(0);
 }
 
-/* ===================================================== */
-/* ===== CORRECTION DÉFINITIVE DES MODALES BOOTSTRAP ==== */
-/* ===================================================== */
-
+/* ================= MODALES ================= */
 .modal-content {
     background-color: var(--bg-section) !important;
     color: var(--text-main) !important;
-    border-radius: 18px;
-    border: 1px solid rgba(255,255,255,0.08);
 }
 
-.modal-header,
-.modal-footer {
-    border-color: rgba(255,255,255,0.1);
-}
-
-.modal-title {
-    color: var(--text-main) !important;
-    font-weight: 600;
-}
-
-.modal-body {
-    color: var(--text-muted) !important;
-}
-
-.modal-body p,
-.modal-body li {
-    color: var(--text-muted) !important;
-}
-
-.modal-body strong {
-    color: var(--text-main) !important;
-}
-
-/* Bouton fermer visible en dark mode */
 .btn-close {
     filter: invert(1);
 }
 
-/* ===== HERO SECTION ===== */
-/* .hero {
-    min-height: 100vh;
-    background-color: #0b0f14;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 40px 20px;
-}
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .home-oval {
+        padding: 40px 30px;
+        border-radius: 35%;
+    }
 
-/* Ovale central */
-/*  */
+    .home-oval h1 {
+        font-size: 1.6rem;
+    }
+
+    .home-oval h2 {
+        font-size: 1rem;
+    }
+}
