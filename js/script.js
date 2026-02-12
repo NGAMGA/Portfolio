@@ -11,8 +11,10 @@ window.addEventListener('scroll', () => {
     });
 });
 
+// Sécurité : afficher toutes les sections
 window.addEventListener('load', () => {
     document.querySelectorAll('section').forEach(section => {
-        section.style.display = 'block';
+        section.style.opacity = '1';
+        section.style.transform = 'none';
     });
 });
