@@ -5,157 +5,47 @@
     --text-muted: #b5b5c3;
     --accent-green: #22c55e;
     --accent-teal: #14b8a6;
-    --accent-violet: #8b5cf6;
 }
 
-/* ================= GLOBAL ================= */
 body {
     scroll-behavior: smooth;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     background-color: var(--bg-main);
     color: var(--text-main);
 }
 
-section {
-    padding: 110px 0;
-}
+/* Classe pour forcer le fond noir sur les pages projets */
+.bg-main { background-color: var(--bg-main) !important; min-height: 100vh; }
 
-/* ================= NAVBAR ================= */
-.navbar-custom {
-    background: rgba(14, 14, 17, 0.95);
-    backdrop-filter: blur(10px);
-}
+section { padding: 110px 0; }
 
-/* ================= ACCUEIL ================= */
+.navbar-custom { background: rgba(14, 14, 17, 0.95); backdrop-filter: blur(10px); }
+
 #accueil {
     min-height: 100vh;
     background: radial-gradient(circle at top, #1f2933, #0e0e11);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 160px 20px 100px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
 }
 
 .home-oval {
     background: linear-gradient(135deg, #1f2933, #111827);
-    padding: 60px 70px;
-    border-radius: 40%;
-    box-shadow: 0 25px 60px rgba(20, 184, 166, 0.25);
-    max-width: 700px;
+    padding: 60px 70px; border-radius: 40%;
+    box-shadow: 0 25px 60px rgba(20, 184, 166, 0.25); max-width: 700px;
 }
 
-.home-oval h1 {
-    font-size: 2.6rem;
-    font-weight: 700;
-    color: var(--text-main);
-}
-
-.home-oval h2 {
-    font-size: 1.2rem;
-    color: var(--text-muted);
-    margin-bottom: 25px;
-}
-
-.hero-description {
-    max-width: 720px;
-    margin-top: 40px;
-    color: var(--text-muted);
-    font-size: 1rem;
-}
-
-/* ================= BOUTONS ================= */
 .btn-gradient {
     background: linear-gradient(135deg, var(--accent-teal), var(--accent-green));
-    color: #0e0e11;
-    padding: 14px 38px;
-    border-radius: 30px;
-    border: none;
-    transition: all 0.3s ease;
+    color: #0e0e11; padding: 12px 30px; border-radius: 30px; border: none; transition: 0.3s;
 }
 
-.btn-gradient:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 15px 30px rgba(20, 184, 166, 0.4);
-}
+.btn-gradient:hover { transform: translateY(-4px); box-shadow: 0 10px 20px rgba(20, 184, 166, 0.3); }
 
-/* ================= PHOTO ================= */
-.profile-photo {
-    width: 340px;
-    height: 340px;
-    object-fit: cover;
-    border-radius: 18px;
-    border: 1px solid rgba(255,255,255,0.1);
-}
+.project-card { background-color: #1c1c25; border-radius: 16px; border: 1px solid rgba(255,255,255,0.06); transition: 0.3s; }
+.project-card:hover { transform: translateY(-8px); box-shadow: 0 20px 35px rgba(20, 184, 166, 0.25); }
+.card-img-top { height: 220px; object-fit: cover; }
 
-/* ================= PROJETS ================= */
-.project-card {
-    background-color: #1c1c25;
-    border-radius: 16px;
-    border: 1px solid rgba(255,255,255,0.06);
-    transition: 0.3s ease;
-}
+.animate { opacity: 0; transform: translateY(30px); transition: 0.6s ease-out; }
+.animate.show { opacity: 1; transform: translateY(0); }
 
-.project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 35px rgba(20, 184, 166, 0.25);
-}
-
-.card-img-top {
-    height: 220px;
-    object-fit: cover;
-}
-
-/* ================= ANIMATIONS ================= */
-.animate {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 0.4s ease;
-}
-
-.animate.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* ================= MODALES ================= */
-.modal-content {
-    background-color: var(--bg-section) !important;
-    color: var(--text-main) !important;
-}
-
-.btn-close {
-    filter: invert(1);
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 768px) {
-    .home-oval {
-        padding: 40px 30px;
-        border-radius: 35%;
-    }
-
-    .home-oval h1 {
-        font-size: 1.6rem;
-    }
-
-    .home-oval h2 {
-        font-size: 1rem;
-    }
-}
-
-/* Style pour les images dans les modales */
-.border-custom {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.border-custom:hover {
-    transform: scale(1.05); /* Petit effet de zoom au survol */
-    cursor: pointer;
-}
-
-.modal-body img {
-    margin-bottom: 5px;
-}
+.border-custom { border: 1px solid rgba(255, 255, 255, 0.1); transition: 0.3s; }
+.border-custom:hover { transform: scale(1.02); }
