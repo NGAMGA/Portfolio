@@ -144,3 +144,18 @@ section {
         font-size: 1rem;
     }
 }
+
+/* Style pour les images dans les modales */
+.border-custom {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.border-custom:hover {
+    transform: scale(1.05); /* Petit effet de zoom au survol */
+    cursor: pointer;
+}
+
+.modal-body img {
+    margin-bottom: 5px;
+}
