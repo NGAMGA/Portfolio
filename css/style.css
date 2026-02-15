@@ -1,10 +1,11 @@
 :root {
     --bg-main: #0e0e11;
     --bg-section: #16161d;
+    --bg-card: #25262c; /* Couleur grise spécifique de l'image AE */
     --text-main: #e6e6eb;
     --text-muted: #b5b5c3;
     --accent-green: #22c55e;
-    --accent-teal: #14b8a6;
+    --accent-teal: #4fd1c5; /* Turquoise plus éclatant pour l'effet AE */
 }
 
 body {
@@ -12,6 +13,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background-color: var(--bg-main);
     color: var(--text-main);
+    margin: 0;
 }
 
 section { padding: 100px 0; background-color: var(--bg-main); }
@@ -46,70 +48,97 @@ section { padding: 100px 0; background-color: var(--bg-main); }
     border: 2px solid var(--accent-teal);
 }
 
-/* ================= STYLE PROJETS TYPE IMAGE AE ================= */
+/* ================= STYLE PROJETS VERSION AE (FINAL) ================= */
+
 .card-ae {
-    background: #1c1c25; 
-    border-radius: 24px; /* Arrondis prononcés */
+    background: var(--bg-card); 
+    border-radius: 28px; /* Bords très arrondis comme sur AE */
     overflow: hidden;
-    border: 2px solid transparent;
-    transition: all 0.4s ease;
+    border: 2px solid var(--accent-teal); /* Liseré turquoise sur toutes les cartes pour le look AE */
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-}
-
-.card-ae.active {
-    border-color: var(--accent-teal); /* Liseré turquoise pour la carte active */
+    height: 100%;
 }
 
 .card-ae:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(79, 209, 197, 0.2);
 }
 
 .card-ae-img-container {
-    padding: 12px; /* Espace interne pour l'image */
+    padding: 15px; /* Cadre interne pour l'image */
 }
 
 .card-ae-img {
     width: 100%;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
     border-radius: 20px; /* Coins arrondis de l'image interne */
 }
 
 .card-ae-body {
-    padding: 20px;
+    padding: 0 25px 25px 25px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
+.card-ae-body h5 {
+    color: var(--text-main);
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-ae-body p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Zone basse de la carte : Chemin + Bouton */
+.card-ae-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.path-text {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+/* Bouton style AE */
 .btn-ae {
     background-color: var(--accent-teal);
-    color: #0e0e11;
+    color: #1a202c;
     font-weight: bold;
     border-radius: 12px;
-    padding: 10px 18px;
+    padding: 8px 20px;
     text-decoration: none;
     font-size: 0.9rem;
     transition: 0.3s;
-    width: fit-content;
 }
 
 .btn-ae:hover {
-    background-color: var(--accent-green);
-    color: #0e0e11;
+    background-color: #38b2ac;
+    color: #ffffff;
 }
 
 .btn-ae-muted {
-    background-color: #2d2d35;
+    background-color: #3d3e47;
     color: var(--text-muted);
     font-weight: bold;
     border-radius: 12px;
-    padding: 10px 18px;
+    padding: 8px 20px;
     border: none;
     font-size: 0.9rem;
-    width: fit-content;
 }
+
 /* ============================================================= */
 
 .text-teal { color: var(--accent-teal) !important; }
