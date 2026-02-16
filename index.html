@@ -41,24 +41,6 @@
     </p>
 </section>
 
-<section id="apropos" class="bg-section shadow-sm">
-    <div class="container animate">
-        <h2 class="text-center mb-5 fw-bold">À propos de moi</h2>
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-5 text-center mb-4">
-                <img src="assets/images/profile.jpg" alt="Ashley" class="profile-photo shadow-lg">
-            </div>
-            <div class="col-md-7">
-                <p class="lead">
-                    Je m’appelle Ashley et je suis passionnée par le développement web.
-                    J’adore apprendre de nouvelles technologies et trouver des solutions
-                    créatives pour rendre les sites agréables à utiliser.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section id="projets">
     <div class="container animate">
         <h2 class="text-center mb-5 fw-bold">Mes projets</h2>
@@ -66,12 +48,12 @@
 
             <div class="col-md-4">
                 <div class="card-ae shadow-lg h-100">
-                    <div class="card-ae-img-wrap">
-                        <img src="assets/images/api_poker.jpg" alt="API Poker">
+                    <div class="card-ae-img-container" id="bg-poker">
+                        <img src="assets/images/api_poker.jpg" class="card-ae-img" alt="API Poker">
                     </div>
-                    <div class="card-ae-content">
+                    <div class="card-ae-body">
                         <h5 class="fw-bold text-white mb-2">API Poker</h5>
-                        <p class="text-muted small">Application API pour gérer et jouer au poker en ligne via Postman.</p>
+                        <p class="text-muted small mb-4">Application API pour gérer et jouer au poker en ligne via Postman.</p>
                         <div class="card-ae-footer">
                             <span class="path-text">projets/api-poker.html</span>
                             <a href="projets/api-poker.html" class="btn-ae">Voir le projet</a>
@@ -81,13 +63,13 @@
             </div>
 
             <div class="col-md-4">
-                <div class="card-ae shadow-lg h-100">
-                    <div class="card-ae-img-wrap">
-                        <img src="assets/images/projet2.jpg" alt="Site Admin Coaching">
+                <div class="card-ae active shadow-lg h-100">
+                    <div class="card-ae-img-container" id="bg-admin">
+                        <img src="assets/images/projet2.jpg" class="card-ae-img" alt="Site Admin Coaching">
                     </div>
-                    <div class="card-ae-content">
+                    <div class="card-ae-body">
                         <h5 class="fw-bold text-white mb-2">Site Admin Coaching</h5>
-                        <p class="text-muted small">Site web administrateur pour une application de coaching sportif.</p>
+                        <p class="text-muted small mb-4">Site web administrateur pour une application de coaching sportif.</p>
                         <div class="card-ae-footer">
                             <span class="path-text">projets/admin-coaching.html</span>
                             <a href="projets/admin-coaching.html" class="btn-ae">Voir le projet</a>
@@ -98,15 +80,15 @@
 
             <div class="col-md-4">
                 <div class="card-ae shadow-lg h-100">
-                    <div class="card-ae-img-wrap">
-                        <img src="assets/images/projet3.jpg" alt="Portfolio Personnel">
+                    <div class="card-ae-img-container" id="bg-portfolio">
+                        <img src="assets/images/projet3.jpg" class="card-ae-img" alt="Portfolio Personnel">
                     </div>
-                    <div class="card-ae-content">
+                    <div class="card-ae-body">
                         <h5 class="fw-bold text-white mb-2">Portfolio Personnel</h5>
-                        <p class="text-muted small">Mon portfolio en ligne présentant mes projets et mes compétences.</p>
+                        <p class="text-muted small mb-4">Mon portfolio en ligne présentant mes projets et mes compétences.</p>
                         <div class="card-ae-footer">
                             <span class="path-text">index.html</span>
-                            <button class="btn-ae-disabled" disabled>Ce site !</button>
+                            <button class="btn-ae-disabled" disabled>Ce site</button>
                         </div>
                     </div>
                 </div>
@@ -116,35 +98,6 @@
     </div>
 </section>
 
-<section id="competences" class="bg-section">
-    <div class="container animate text-center">
-        <h2 class="mb-5 fw-bold">Compétences</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-4 mb-3">
-                <h5 class="text-teal">Outils</h5>
-                <p>Docker / Postman</p>
-            </div>
-            <div class="col-md-4 mb-3">
-                <h5 class="text-teal">Bases de données</h5>
-                <p>MariaDB / MySQL / MongoDB</p>
-            </div>
-            <div class="col-md-4 mb-3">
-                <h5 class="text-teal">Gestion de projet</h5>
-                <p>Git / Trello</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer id="contact" class="py-5 text-center bg-section">
-    <div class="container animate">
-        <h2 class="mb-4 fw-bold text-teal">Contact</h2>
-        <p>Email : ashleyngamga@gmail.com</p>
-        <a href="assets/Ashley_NGAMGA_CV.pdf" target="_blank" class="btn btn-outline-light mt-3">Voir mon CV</a>
-    </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
