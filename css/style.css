@@ -5,111 +5,157 @@
     --text-muted: #b5b5c3;
     --accent-green: #22c55e;
     --accent-teal: #14b8a6;
+    --accent-violet: #8b5cf6;
 }
 
+/* ================= GLOBAL ================= */
 body {
     scroll-behavior: smooth;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg-main);
     color: var(--text-main);
 }
 
-section { padding: 100px 0; background-color: var(--bg-main); }
-.bg-section { background-color: var(--bg-section) !important; }
+section {
+    padding: 110px 0;
+}
 
-.navbar-custom { background: rgba(14, 14, 17, 0.95); backdrop-filter: blur(10px); }
+/* ================= NAVBAR ================= */
+.navbar-custom {
+    background: rgba(14, 14, 17, 0.95);
+    backdrop-filter: blur(10px);
+}
 
+/* ================= ACCUEIL ================= */
 #accueil {
     min-height: 100vh;
     background: radial-gradient(circle at top, #1f2933, #0e0e11);
-    display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 160px 20px 100px;
 }
 
 .home-oval {
     background: linear-gradient(135deg, #1f2933, #111827);
-    padding: 60px 70px; border-radius: 40%;
-    box-shadow: 0 25px 60px rgba(20, 184, 166, 0.25); max-width: 700px;
+    padding: 60px 70px;
+    border-radius: 40%;
+    box-shadow: 0 25px 60px rgba(20, 184, 166, 0.25);
+    max-width: 700px;
 }
 
-.hero-description { color: var(--text-muted); margin-top: 30px; max-width: 600px; }
+.home-oval h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
 
+.home-oval h2 {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    max-width: 720px;
+    margin-top: 40px;
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+/* ================= BOUTONS ================= */
 .btn-gradient {
     background: linear-gradient(135deg, var(--accent-teal), var(--accent-green));
-    color: #0e0e11; padding: 12px 30px; border-radius: 30px; border: none; font-weight: bold;
+    color: #0e0e11;
+    padding: 14px 38px;
+    border-radius: 30px;
+    border: none;
+    transition: all 0.3s ease;
 }
 
+.btn-gradient:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(20, 184, 166, 0.4);
+}
+
+/* ================= PHOTO ================= */
 .profile-photo {
-    width: 320px;
-    height: 320px;
+    width: 340px;
+    height: 340px;
     object-fit: cover;
-    border-radius: 20px;
-    border: 2px solid var(--accent-teal);
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.1);
 }
 
-/* ================= NOUVEAU STYLE PROJETS PRO ================= */
-.project-card-pro {
-    background: #1a1a21; 
+/* ================= PROJETS ================= */
+.project-card {
+    background-color: #1c1c25;
     border-radius: 16px;
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: all 0.4s ease;
-    display: flex;
-    flex-direction: column;
+    border: 1px solid rgba(255,255,255,0.06);
+    transition: 0.3s ease;
 }
 
-.project-card-pro:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(20, 184, 166, 0.15);
-    border-color: var(--accent-teal);
-}
-
-.card-img-container {
-    position: relative;
-    overflow: hidden;
-    height: 200px;
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 35px rgba(20, 184, 166, 0.25);
 }
 
 .card-img-top {
-    width: 100%;
-    height: 100%;
+    height: 220px;
     object-fit: cover;
-    transition: 0.5s;
 }
 
-.project-card-pro:hover .card-img-top {
-    transform: scale(1.1);
+/* ================= ANIMATIONS ================= */
+.animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.4s ease;
 }
 
-.img-overlay {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: linear-gradient(to bottom, transparent, rgba(26, 26, 33, 0.7));
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.tech-tag {
-    font-size: 0.75rem;
-    color: var(--accent-teal);
-    background: rgba(20, 184, 166, 0.1);
-    padding: 4px 12px;
-    border-radius: 20px;
-    border: 1px solid rgba(20, 184, 166, 0.2);
+/* ================= MODALES ================= */
+.modal-content {
+    background-color: var(--bg-section) !important;
+    color: var(--text-main) !important;
 }
 
-.btn-pro-link {
-    color: var(--accent-teal);
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: 0.3s;
+.btn-close {
+    filter: invert(1);
 }
 
-.btn-pro-link:hover {
-    color: var(--accent-green);
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .home-oval {
+        padding: 40px 30px;
+        border-radius: 35%;
+    }
+
+    .home-oval h1 {
+        font-size: 1.6rem;
+    }
+
+    .home-oval h2 {
+        font-size: 1rem;
+    }
 }
-/* ============================================================= */
 
-.text-teal { color: var(--accent-teal) !important; }
+/* Style pour les images dans les modales */
+.border-custom {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
 
-.animate { opacity: 0; transform: translateY(30px); transition: 0.7s ease-out; }
-.animate.show { opacity: 1; transform: translateY(0); }
+.border-custom:hover {
+    transform: scale(1.05); /* Petit effet de zoom au survol */
+    cursor: pointer;
+}
 
-.border-custom { border: 1px solid rgba(255, 255, 255, 0.1); }
+.modal-body img {
+    margin-bottom: 5px;
+}
