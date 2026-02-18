@@ -1,20 +1,21 @@
 :root {
     --bg-main: #0e0e11;
     --bg-section: #16161d;
-    --bg-card: #1c1c25;
-    --accent-ae: #4fd1c5;
-    --text-white: #ffffff;
+    --text-main: #e6e6eb;
     --text-muted: #b5b5c3;
+    --accent-green: #22c55e;
+    --accent-teal: #14b8a6;
 }
 
 body {
     scroll-behavior: smooth;
     font-family: 'Segoe UI', sans-serif;
     background-color: var(--bg-main);
-    color: var(--text-white);
+    color: var(--text-main);
 }
 
-section { padding: 100px 0; }
+section { padding: 100px 0; background-color: var(--bg-main); }
+.bg-section { background-color: var(--bg-section) !important; }
 
 .navbar-custom { background: rgba(14, 14, 17, 0.95); backdrop-filter: blur(10px); }
 
@@ -27,82 +28,88 @@ section { padding: 100px 0; }
 .home-oval {
     background: linear-gradient(135deg, #1f2933, #111827);
     padding: 60px 70px; border-radius: 40%;
-    box-shadow: 0 25px 60px rgba(79, 209, 197, 0.2);
+    box-shadow: 0 25px 60px rgba(20, 184, 166, 0.25); max-width: 700px;
 }
 
-/* STYLE DES CARTES TYPE AE */
-.card-ae {
-    background-color: var(--bg-card);
-    border: 2px solid var(--accent-ae);
-    border-radius: 28px;
+.hero-description { color: var(--text-muted); margin-top: 30px; max-width: 600px; }
+
+.btn-gradient {
+    background: linear-gradient(135deg, var(--accent-teal), var(--accent-green));
+    color: #0e0e11; padding: 12px 30px; border-radius: 30px; border: none; font-weight: bold;
+}
+
+.profile-photo {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid var(--accent-teal);
+}
+
+/* ================= NOUVEAU STYLE PROJETS PRO ================= */
+.project-card-pro {
+    background: #1a1a21; 
+    border-radius: 16px;
     overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s ease;
     display: flex;
     flex-direction: column;
-    transition: all 0.3s ease;
 }
 
-.card-ae.active {
-    box-shadow: 0 0 20px rgba(79, 209, 197, 0.3);
+.project-card-pro:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(20, 184, 166, 0.15);
+    border-color: var(--accent-teal);
 }
 
-/* LE CONTENEUR QUI REÇOIT L'IMAGE DE FOND */
-.card-ae-img-container {
-    padding: 20px;
-    height: 220px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
+.card-img-container {
     position: relative;
+    overflow: hidden;
+    height: 200px;
 }
 
-/* L'image de ton projet par-dessus le fond */
-.card-ae-img {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: contain;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    z-index: 2;
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
 }
 
-/* IMAGES DE FOND DES BLOCS (L'effet tech que tu voulais) */
-#bg-poker {
-    background-image: linear-gradient(rgba(28,28,37,0.4), rgba(28,28,37,0.4)), url('https://img.freepik.com/free-vector/digital-technology-grid-mesh-background_1017-25450.jpg');
-}
-#bg-admin {
-    background-image: linear-gradient(rgba(28,28,37,0.4), rgba(28,28,37,0.4)), url('https://img.freepik.com/free-vector/abstract-technology-particle-background_23-2148425178.jpg');
-}
-#bg-portfolio {
-    background-image: linear-gradient(rgba(28,28,37,0.4), rgba(28,28,37,0.4)), url('https://img.freepik.com/free-vector/abstract-technology-background_23-2148123232.jpg');
+.project-card-pro:hover .card-img-top {
+    transform: scale(1.1);
 }
 
-.card-ae-body {
-    padding: 20px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    background: #1c1c25;
+.img-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(26, 26, 33, 0.7));
 }
 
-.card-ae-footer {
-    margin-top: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.tech-tag {
+    font-size: 0.75rem;
+    color: var(--accent-teal);
+    background: rgba(20, 184, 166, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(20, 184, 166, 0.2);
 }
 
-.btn-ae {
-    background-color: var(--accent-ae);
-    color: #1a202c;
-    border-radius: 12px;
-    padding: 8px 16px;
-    font-weight: bold;
-    text-decoration: none;
+.btn-pro-link {
+    color: var(--accent-teal);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.3s;
 }
 
-.path-text { color: var(--text-muted); font-size: 0.8rem; font-style: italic; }
+.btn-pro-link:hover {
+    color: var(--accent-green);
+}
+/* ============================================================= */
+
+.text-teal { color: var(--accent-teal) !important; }
 
 .animate { opacity: 0; transform: translateY(30px); transition: 0.7s ease-out; }
 .animate.show { opacity: 1; transform: translateY(0); }
+
+.border-custom { border: 1px solid rgba(255, 255, 255, 0.1); }
