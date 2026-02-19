@@ -1,3 +1,4 @@
+/* --- VARIABLES --- */
 :root {
     --bg-main: #0e0e11;
     --bg-section: #16161d;
@@ -7,6 +8,7 @@
     --accent-teal: #14b8a6;
 }
 
+/* --- REGLAGES GENERAUX --- */
 body {
     scroll-behavior: smooth;
     font-family: 'Segoe UI', sans-serif;
@@ -14,61 +16,61 @@ body {
     color: var(--text-main);
 }
 
-/* Force la lisibilité dans les sections sombres */
-.bg-section p, .bg-section li {
-    color: #ffffff !important; /* Texte blanc pur pour les zones de lecture */
-}
-
-/* Reste de ton code original inchangé pour préserver l'accueil */
 section { padding: 100px 0; background-color: var(--bg-main); }
 .bg-section { background-color: var(--bg-section) !important; }
 .navbar-custom { background: rgba(14, 14, 17, 0.95); backdrop-filter: blur(10px); }
 
-#accueil {
-    min-height: 100vh;
-    background: radial-gradient(circle at top, #1f2933, #0e0e11);
-    display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
-}
-
-.home-oval {
-    background: linear-gradient(135deg, #1f2933, #111827);
-    padding: 60px 70px; border-radius: 40%;
-    box-shadow: 0 25px 60px rgba(20, 184, 166, 0.25); max-width: 700px;
-}
-
-.hero-description { color: var(--text-muted); margin-top: 30px; max-width: 600px; }
-
-.btn-gradient {
-    background: linear-gradient(135deg, var(--accent-teal), var(--accent-green));
-    color: #0e0e11; padding: 12px 30px; border-radius: 30px; border: none; font-weight: bold;
-}
-
-.profile-photo {
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 20px;
-    border: 2px solid var(--accent-teal);
-}
-
-.project-card-pro {
+/* --- STYLE CARTES AE (UNIFIÉ) --- */
+.card-ae {
     background: #1a1a21; 
-    border-radius: 16px;
+    border-radius: 24px;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.4s ease;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Force l'organisation verticale */
 }
 
-.text-teal { color: var(--accent-teal) !important; }
+.card-ae:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-teal);
+    box-shadow: 0 10px 30px rgba(20, 184, 166, 0.2);
+}
 
-.animate { opacity: 0; transform: translateY(30px); transition: 0.7s ease-out; }
-.animate.show { opacity: 1; transform: translateY(0); }
+.card-ae-img-wrap {
+    height: 200px; /* Force la même hauteur pour toutes les images */
+    overflow: hidden;
+}
 
-.border-custom { border: 1px solid rgba(255, 255, 255, 0.1); }
+.card-ae-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* L'image remplit le cadre sans se déformer */
+}
 
-/* Bouton secondaire (contour turquoise) */
+.card-ae-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Pousse le footer vers le bas */
+}
+
+.card-ae-footer {
+    margin-top: auto; /* Aligne le footer en bas, peu importe la longueur du texte */
+    padding-top: 15px;
+}
+
+/* --- BOUTONS --- */
+.btn-ae {
+    background-color: var(--accent-teal);
+    color: #0e0e11;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 8px 18px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
 .btn-ae-outline {
     background-color: transparent;
     color: var(--accent-teal);
@@ -78,15 +80,18 @@ section { padding: 100px 0; background-color: var(--bg-main); }
     font-weight: bold;
     text-decoration: none;
     font-size: 0.85rem;
-    transition: 0.3s;
 }
 
-.btn-ae-outline:hover {
-    background-color: rgba(79, 209, 197, 0.1);
-    color: var(--text-white);
+.btn-ae-muted {
+    background-color: #2d2d35;
+    color: var(--text-muted);
+    border-radius: 12px;
+    padding: 8px 18px;
+    font-size: 0.85rem;
 }
 
-/* Ajustement pour le footer de la carte avec deux boutons */
-.gap-2 {
-    gap: 0.5rem !important;
-}
+/* --- AUTRES --- */
+.text-teal { color: var(--accent-teal) !important; }
+.path-text { color: var(--text-muted); font-size: 0.75rem; opacity: 0.8; }
+.animate { opacity: 0; transform: translateY(30px); transition: 0.7s ease-out; }
+.animate.show { opacity: 1; transform: translateY(0); }
