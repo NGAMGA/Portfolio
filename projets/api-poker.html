@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet - Poker API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-main">
+
+<nav class="navbar navbar-dark navbar-custom fixed-top shadow">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html"><i class="bi bi-arrow-left"></i> Retour au portfolio</a>
+    </div>
+</nav>
+
+<main class="container py-5 mt-5">
+    <div class="row justify-content-center animate">
+        <div class="col-lg-10">
+            <h1 class="fw-bold text-teal mt-5 mb-2">Poker API — NestJS</h1>
+            <div class="d-flex gap-2 mb-4">
+                <span class="badge bg-dark border border-teal text-white">Projet en Binôme</span>
+                <span class="badge bg-dark border border-teal text-white">Durée : 2 mois</span>
+            </div>
+
+            <div class="alert alert-info bg-section border-teal shadow-sm p-4 mb-5">
+                <h3 class="text-teal border-bottom border-teal pb-2 mb-3">
+                    <i class="bi bi-target"></i> Objectif du projet
+                </h3>
+                <p class="lead mb-0 text-white">
+                    Développer une API backend robuste pour gérer des parties de poker **Texas Hold’em**. Le système permet l'authentification de joueurs réels, l'intégration de bots automatiques et la gestion complète des cycles de mise et des gains.
+                </p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-7">
+                    <h3 class="text-teal mb-3"><i class="bi bi-info-circle"></i> Présentation</h3>
+                    <p class="text-white">
+                        Conçue comme une API testable via **Postman** et documentée avec **Swagger**, cette solution gère l'intégralité d'une partie : du buy-in initial au reset de la table, en passant par la distribution des cartes privées et communes.
+                    </p>
+                    <p class="text-white">
+                        Elle implémente une logique de jeu complexe incluant les phases de Flop, Turn et River, ainsi qu'une sécurité stricte garantissant que chaque joueur ne voit que son propre jeu.
+                    </p>
+                </div>
+                <div class="col-md-5 bg-section p-4 rounded shadow-sm">
+                    <h4 class="text-teal"><i class="bi bi-stars"></i> Fonctionnalités clés</h4>
+                    <ul class="list-unstyled text-white">
+                        <li><i class="bi bi-check2-circle text-teal"></i> Authentification JWT sécurisée</li>
+                        <li><i class="bi bi-check2-circle text-teal"></i> Gestion des bots automatiques</li>
+                        <li><i class="bi bi-check2-circle text-teal"></i> Actions : Check, Bet, Call, Raise, Fold</li>
+                        <li><i class="bi bi-check2-circle text-teal"></i> Gestion des All-in et Side Pots</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="text-teal mb-3"><i class="bi bi-cpu"></i> Technologies utilisées</h3>
+            <div class="row g-4 mb-5 text-white">
+                <div class="col-md-4">
+                    <div class="p-3 border border-secondary rounded text-center">
+                        <i class="bi bi-code-square fs-1 text-teal"></i>
+                        <h5 class="mt-2">NestJS</h5>
+                        <p class="small text-white-50">TypeScript Backend Framework</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 border border-secondary rounded text-center">
+                        <i class="bi bi-database fs-1 text-teal"></i>
+                        <h5 class="mt-2">SQLite & TypeORM</h5>
+                        <p class="small text-white-50">Persistance des données</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 border border-secondary rounded text-center">
+                        <i class="bi bi-shield-check fs-1 text-teal"></i>
+                        <h5 class="mt-2">Passport JWT</h5>
+                        <p class="small text-white-50">Sécurisation des routes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-section p-4 rounded shadow-sm mb-5 text-white">
+                <h4 class="text-teal"><i class="bi bi-people"></i> Équipe du projet</h4>
+                <!-- <p class="mb-0">Développé en collaboration par : <strong>BOUCHARD Mehdi</strong> et <strong>NGAMGA Ashley</strong>.</p> -->
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="py-4 text-center border-top border-secondary mt-5">
+    <p class="text-white-50">Portfolio d'Ashley Tania NGAMGA</p>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
