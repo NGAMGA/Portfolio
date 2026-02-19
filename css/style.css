@@ -67,3 +67,26 @@ section { padding: 100px 0; background-color: var(--bg-main); }
 .animate.show { opacity: 1; transform: translateY(0); }
 
 .border-custom { border: 1px solid rgba(255, 255, 255, 0.1); }
+
+/* Bouton secondaire (contour turquoise) */
+.btn-ae-outline {
+    background-color: transparent;
+    color: var(--accent-teal);
+    border: 1px solid var(--accent-teal);
+    border-radius: 12px;
+    padding: 8px 18px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.btn-ae-outline:hover {
+    background-color: rgba(79, 209, 197, 0.1);
+    color: var(--text-white);
+}
+
+/* Ajustement pour le footer de la carte avec deux boutons */
+.gap-2 {
+    gap: 0.5rem !important;
+}
