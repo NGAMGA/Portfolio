@@ -49,7 +49,7 @@ section { padding: 100px 0; background-color: var(--bg-main); }
     border: 2px solid var(--accent-teal);
 }
 
-/* CARTES PROJETS (SYNCHRONISATION ET DESIGN) */
+/* CARTES PROJETS */
 .project-card-pro {
     background: #1a1a21; 
     border-radius: 16px;
@@ -90,7 +90,7 @@ section { padding: 100px 0; background-color: var(--bg-main); }
     opacity: 0.85;
 }
 
-/* PERSONNALISATION DES BOUTONS BOOTSTRAP (ROUNDS/PILLS) */
+/* BOUTONS BOOTSTRAP */
 .btn-info {
     background-color: var(--accent-teal) !important;
     border-color: var(--accent-teal) !important;
@@ -112,37 +112,51 @@ section { padding: 100px 0; background-color: var(--bg-main); }
     color: #0e0e11 !important;
 }
 
-.btn-secondary.disabled {
-    background-color: #2d2d35 !important;
-    border-color: #2d2d35 !important;
-    opacity: 0.6;
+/* SECTION COMPÉTENCES - CORRECTION ÉCRITURES ET ICÔNES */
+#competences h3 {
+    color: var(--accent-teal);
+    font-weight: 600;
 }
 
-/* STYLE SECTION COMPETENCES */
 #competences h5 {
     border-left: 3px solid var(--accent-teal);
     padding-left: 12px;
     margin-bottom: 8px;
-    color: var(--text-main);
+    color: #ffffff; /* Titre en blanc pour visibilité */
 }
 
 #competences p {
     margin-left: 15px;
-    color: var(--text-muted);
+    color: #ffffff !important; /* Force les langages/technos en blanc pur */
+    font-weight: 400;
 }
 
-#competences .bg-main {
-    transition: transform 0.3s ease, border-color 0.3s ease;
+/* Boîte des Soft Skills */
+.skills-soft-box {
     background-color: var(--bg-main);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 16px;
+    padding: 20px;
+    transition: 0.3s;
 }
 
-#competences .bg-main:hover {
-    transform: scale(1.02);
+.skills-soft-box:hover {
     border-color: var(--accent-teal) !important;
+    transform: scale(1.02);
 }
 
-#competences .bi-teal {
+/* Style des icônes Bootstrap uniquement */
+.soft-skills-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.soft-skills-list .bi {
     color: var(--accent-teal);
+    margin-right: 12px;
+    font-size: 1.2rem;
 }
 
 /* UTILITAIRES */
