@@ -173,3 +173,34 @@ section { padding: 100px 0; background-color: var(--bg-main); }
 .animate.show { opacity: 1; transform: translateY(0); }
 
 .border-custom { border: 1px solid rgba(255, 255, 255, 0.1) !important; }
+
+/* --- SECTION CONTACT --- */
+
+/* La boîte grise pour les initiales M et In */
+.contact-icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: #e0e0e0; /* Gris clair comme sur la capture */
+    color: #000000;
+    font-size: 1.5rem;
+    border-radius: 4px; /* Coins très légèrement arrondis */
+}
+
+/* Style des liens pour qu'ils ne soient pas bleus par défaut */
+.contact-link {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--accent-teal);
+    text-decoration: underline;
+}
+
+/* Aligner le titre à droite comme sur l'image */
+#contact h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
