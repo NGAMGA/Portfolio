@@ -94,7 +94,7 @@ section { padding: 100px 0; background-color: var(--bg-main); }
 .btn-info {
     background-color: var(--accent-teal) !important;
     border-color: var(--accent-teal) !important;
-    color: #0e0e11 !important; /* Texte sombre sur fond turquoise */
+    color: #0e0e11 !important; 
 }
 
 .btn-info:hover {
@@ -118,6 +118,33 @@ section { padding: 100px 0; background-color: var(--bg-main); }
     opacity: 0.6;
 }
 
+/* STYLE SECTION COMPETENCES */
+#competences h5 {
+    border-left: 3px solid var(--accent-teal);
+    padding-left: 12px;
+    margin-bottom: 8px;
+    color: var(--text-main);
+}
+
+#competences p {
+    margin-left: 15px;
+    color: var(--text-muted);
+}
+
+#competences .bg-main {
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    background-color: var(--bg-main);
+}
+
+#competences .bg-main:hover {
+    transform: scale(1.02);
+    border-color: var(--accent-teal) !important;
+}
+
+#competences .bi-teal {
+    color: var(--accent-teal);
+}
+
 /* UTILITAIRES */
 .text-teal { color: var(--accent-teal) !important; }
 
@@ -131,4 +158,4 @@ section { padding: 100px 0; background-color: var(--bg-main); }
 .animate { opacity: 0; transform: translateY(30px); transition: 0.7s ease-out; }
 .animate.show { opacity: 1; transform: translateY(0); }
 
-.border-custom { border: 1px solid rgba(255, 255, 255, 0.1); }
+.border-custom { border: 1px solid rgba(255, 255, 255, 0.1) !important; }
